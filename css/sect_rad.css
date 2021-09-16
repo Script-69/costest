@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.carousel-tittle {
+    background: linear-gradient(rgba(36, 38, 41, 0.75), rgba(5, 5, 5, 0.75)), url("../img/PORTADA.jpg") no-repeat center/cover;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 70px;
+    margin-top: 20px;
+}
+/*.carousel hr {
+    margin: 1% 7%;
+    height: 10px;
+    background: linear-gradient(to right, #03045E, #008000, #03045E);
+}*/
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    
+    position: relative;
+}
+.carousel__container {
+    white-space: nowrap;
+    margin: 80px 110px;
+    padding-bottom: 10px;
+}
+.carousel-item {
+    background-color: mediumturquoise;
+    width: 240px;
+    height: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-left: 10px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 450ms all;
+    transform-origin: center right left;
+    position: relative;
+}
+.carousel-item:hover ~ .carousel-item {
+    transform: translate3d(100px, 0, 0);
+}
+.carousel__container:hover .carousel-item {
+    opacity: 0.3;
+}
+.carousel__container:hover .carousel-item:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}
+.item-img {
+    width: 240px;
+    height: 350px;
+    object-fit: cover;
+}
+.item-detalls {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+    font-size: 10px;
+    opacity: 0.3;
+    transition: 450ms opacity;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: white;
+}
+.item-tittle {
+    font-size: 20px;
+    margin-top: 271px;
+    text-align: center;
+}
+.item-content {
+    font-size: 10px;
+    white-space: normal;
+    text-align: center;
+}
+.carousel__container:hover .item-detalls {
+    opacity: 1;
+}

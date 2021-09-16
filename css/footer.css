@@ -1,0 +1,53 @@
+
+/*-------------------------------------- 
+SECCION CONTACTOS
+--------------------------------------*/
+footer {
+    padding: 0;
+}
+
+.footer-content {
+    background-color: #040a0a;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 15px 25px; 
+}
+
+.footer-content h2,
+.footer-content p,
+.footer-content a {
+    color: #f2f2f2;
+    text-decoration: none;
+}
+
+.footer-content h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.footer-content .content1,
+.footer-content .content2,
+.footer-content .content3,
+.footer-content .content4 {
+    padding: 0 15px;
+}
+
+.content3 .redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.content3 .redes-sociales a {
+    padding: 5px;
+    font-size: 30px;
+}
+
+.content4 .instituciones img {
+    width: 30px;
+}
+
+.content4 ul {
+    list-style: none;
+}
